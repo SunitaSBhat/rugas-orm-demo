@@ -1,0 +1,50 @@
+#Create{
+    margin-left:-140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex
+    ;
+        flex-direction: column;
+        width: 200px;
+        height: 270px;
+       
+        margin-top: 67px;
+        border:1px solid black;
+        border-radius: 12px 12px;
+        padding:12px 12px;
+}
+#select{
+    border-radius: 12px 12px;
+    margin: 12px 0px;
+    background-color: white;
+    color: black;
+    height: 32px;
+    font-weight: bold;
+}
+input{
+    width: 190px;
+    height: 25px;
+    border-radius: 12px 12px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    background-color: transparent;
+}
+#a{
+text-decoration: none;
+}
+button{
+    margin-top: 12px;
+    width: 190px;
+    background-color: orange;
+    height: 32px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 12px 12px;
+    box-shadow: 2px 2px 4px -1px;
+    font-weight: bold;
+    font-family: serif;
+}
