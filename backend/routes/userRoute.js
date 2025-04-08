@@ -30,9 +30,9 @@ router.post("/userLogin", async(req, res)=>{
         const token=await user.matchPassword(email, password);
         console.log(token);
         return res.cookie("token", token, {
-            httpOnly: false,
-            secure: false, 
-            sameSite: "Lax"
+            httpOnly: true,
+  secure: true,
+  sameSite: "None",
           }).json("Sucessfully login")
     }                    
     catch(error){
