@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import "./createAccoun.css";
+import Nav from "./nav";
 export default function CustomerOnboarding() {
    const [customer, setCustomer]= useState({
        name:"",
@@ -32,6 +33,8 @@ export default function CustomerOnboarding() {
       }
     }
   return (
+    <>
+    <Nav/>
     <div id="Create">
         <h1>Customer Onboarding !!</h1>
         <form style={{height:"301px"}}>
@@ -42,5 +45,6 @@ export default function CustomerOnboarding() {
         <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     </div>
+    </>
   )
 }

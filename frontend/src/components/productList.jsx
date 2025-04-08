@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './productList.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '../reduxs/counterslice';
+import Nav from "./nav";
 export default function ProductList() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
@@ -15,6 +16,8 @@ export default function ProductList() {
   }, []);
 
   return ( 
+    <>
+    <Nav/>
     <div className="main">
       <h1>Hey Have a look ar our products!!</h1>
     <div className='product'>
@@ -35,7 +38,8 @@ export default function ProductList() {
     </div>
   ))}
 </div>
-</div>  
+</div> 
+</> 
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./orderList.css";
+import Nav from "./nav";
 export default function OrderList() {
   const [orderData, setOrderData] = useState([]);
   const [filter, setFilter] = useState({
@@ -48,6 +49,7 @@ export default function OrderList() {
 
   return (
     <div>
+      <Nav/>
       <div className="order-container">
   <h1 className="order-title">Your Orders</h1>
 

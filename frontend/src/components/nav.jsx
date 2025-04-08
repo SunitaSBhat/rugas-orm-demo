@@ -31,19 +31,19 @@ const Nav= () => {
   } 
   return (
     <>
-    <nav className="navbar">
+   <nav className="navbar">
       <img src=""/>
       <ul className="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/">About</a></li>
-        <li><a href="" onClick={handleNavigate}>Create Customer</a></li>
+        <li><a href="/CustomerOnboarding">Create Customer</a></li>
+        <li><a href="/Order">Create Order</a></li>
+        <li><a href="/orderList">Order List</a></li>
+        <li><a href="/productList">Product List</a></li>
         <li><a href="#">Support</a></li>
         <li><button className="sign-in-btn" onClick={()=>navigate("/CreateAccount")}>Sign In / Sign Up</button></li>
-        <li><button className="sign-in-btn" onClick={handleLogout}>Logout</button></li>
       </ul>
     </nav>
-   
-    
  </>
  );
 };

@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import "./createAccoun.css";
+import Nav from "./nav"
 export default function CustomerAndProduct() {
      const [product, setProduct]= useState({
         customer:"",
@@ -64,6 +65,8 @@ export default function CustomerAndProduct() {
           }, []);
           console.log(customerData);
   return (
+    <>
+   <Nav/>
     <div id="Create" style={{height:"100px", marginTop:"123px"}}>
         <h1>Make Your Order !!</h1>
         <form onSubmit={handleSubmit}>
@@ -84,5 +87,6 @@ export default function CustomerAndProduct() {
   <button type="submit" onClick={handleSubmit}>Order</button>
 </form>
     </div>
+    </>
   )
 }

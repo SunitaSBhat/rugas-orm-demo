@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import "./createAccoun.css";
+import Nav from "./nav"
 export default function Login() {
   const [userAccountVerify, setUserAccountVerify]= useState({
       email: "",
@@ -28,6 +29,8 @@ alert("loged In");
     }
   }
   return (
+    <>
+    <Nav/>
     <div id="Create">
         <h1>Login here !!</h1>
         <form style={{height:"170px"}}>
@@ -36,5 +39,6 @@ alert("loged In");
         <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
     </div>
+    </>
   )
 }

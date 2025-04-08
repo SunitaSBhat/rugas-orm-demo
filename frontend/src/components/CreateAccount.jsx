@@ -30,6 +30,7 @@ alert(result);
     }
   }
   return (
+    <>
     <div id="Create">
       <h1>Create Account here !!</h1>
         <form>
@@ -41,5 +42,6 @@ alert(result);
         
         <p>Already Have an account <a href="/Login" id="a">Login here</a></p>
     </div>
+    </>
   )
 }
