@@ -14,7 +14,7 @@ export default function Home() {
       <nav className="navbar">
       <img src=""/>
       <ul className="nav-links">
-        <h1>Logo</h1>
+        
         <li><a href="/">Home</a></li>
         <li><a href="/">About</a></li>
         <li><a href="#">Support</a></li>
