@@ -19,8 +19,8 @@ const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/userLogin", {
   credentials: "include"
 })
 const result= await res.json();
-
-alert(result);
+console.log(result);
+alert("loged In");
     }
     catch(error){
       {console.log(error)}
