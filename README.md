@@ -1,23 +1,23 @@
 
 
   <h1>🛒 Order Management Application</h1>
-  <p>A full-stack Order Management System built using the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js) that allows users to manage orders efficiently with secure authentication and robust features.</p>
+  <p>A full-stack Order Management System built using the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js) that allows users to manage orders efficiently with  robust features.</p>
 
   <h2>🚀 Features</h2>
 
   <h3>🔐 Authentication</h3>
   <ul>
     <li>User registration and login</li>
-    <li>Password hashing using <code>bcrypt</code></li>
-    <li>JWT-based secure authentication</li>
+    <li>Password hashing using </li>
+    <li>JWT-based token generation</li>
   </ul>
 
   <h3>🎯 Frontend</h3>
   <ul>
     <li>Built with <code>React.js</code></li>
-    <li><code>Redux</code> for global state management</li>
     <li><code>React Router</code> for page navigation</li>
     <li><code>useState</code>/<code>useEffect</code> hooks for component logic</li>
+    <li><code>Redux</code></li>
   </ul>
 
   <h3>🛠 Backend</h3>
@@ -45,7 +45,7 @@
 npm install</code></pre>
 
   <p>Create a <code>.env</code> file inside the <code>backend/</code> directory and add:</p>
-  <pre><code>PORT=5000
+  <pre><code>PORT= port 
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key</code></pre>
 
@@ -59,16 +59,13 @@ npm start</code></pre>
 
   <h2>🛡 Security Practices</h2>
   <ul>
-    <li>Passwords hashed using <code>bcrypt</code></li>
-    <li>Authentication using <code>JWT</code></li>
+    <li>Passwords hashed using </li>
     <li>Secure storage of user and order data</li>
   </ul>
 
   <h2>✅ Future Enhancements</h2>
   <ul>
     <li>Role-based access (admin, customer)</li>
-    <li>Order filtering and sorting</li>
-    <li>Pagination support</li>
     <li>Deployment on cloud platforms</li>
   </ul>
 
