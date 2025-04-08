@@ -29,12 +29,17 @@ router.post("/userLogin", async(req, res)=>{
     try{
         const token=await user.matchPassword(email, password);
         console.log(token);
-        return res.cookie("token", token, {
+        res.cookie("token", token, {
+            expires:new Date(Date.now()+900000000),
             httpOnly: true,
   secure: true,
   sameSite: "None",
    path: "/"
-          }).json("Sucessfully login")
+          })
+          const result={
+            token
+          }
+          return res.json({token}, "sucess login")
     }                    
     catch(error){
         console.log(error);

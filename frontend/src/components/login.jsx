@@ -15,7 +15,7 @@ export default function Login() {
 const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/userLogin", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ email, password }),
+  body: JSON.stringify(userAccountVerify),
   credentials: "include"
 })
 const result= await res.json();

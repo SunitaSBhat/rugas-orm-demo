@@ -7,10 +7,9 @@ const Nav= () => {
    const handleNavigate= async()=>{
     try{
     await axios.get('https://rugas-orm-demo-xi.vercel.app/api/check-auth', { withCredentials: true });
-    navigate("/CustomerOnboardingr");
+    navigate("/CustomerOnboarding");
     }
     catch(error){
-      console.log(error.response);
       if(error.response && error.response.status===401){
         alert('Please create an account or sign in first!');
        
