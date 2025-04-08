@@ -1,5 +1,5 @@
 const express= require("express");
-const port=8000;
+
 const path= require("path");
 const app=express();
 const bodyParser = require("body-parser");
@@ -9,6 +9,7 @@ const {checkloggedinUser}= require("./middleware/index");
 const mongoose= require("mongoose");
 const userRoute= require("./routes/userRoute.js");
 const cors = require("cors");
+const port=process.env.PORT;
 mongoose.connect(process.env.MONGO_URL, {
 
     useNewUrlParser: "true",
