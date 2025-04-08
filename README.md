@@ -24,7 +24,6 @@
   <ul>
     <li><code>Node.js</code> with <code>Express.js</code> to create RESTful APIs</li>
     <li>Clean code structure with controllers, routes, and middleware</li>
-    <li>Token-based protected routes</li>
   </ul>
 
   <h3>🗃 Database</h3>
