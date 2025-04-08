@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGO_URL, {
   app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-  origin: "http://localhost:3000", 
+  origin: "https://rugas-orm-demo-w3zi.vercel.app", 
   credentials: true
 }));
 app.use(cookieParser());
