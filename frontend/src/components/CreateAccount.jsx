@@ -13,7 +13,7 @@ export default function CreateAccount() {
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try{
-const res= await fetch("http://localhost:8000/user/userCreate", {
+const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/userCreate", {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

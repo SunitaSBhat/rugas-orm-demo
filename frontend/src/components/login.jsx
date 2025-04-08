@@ -12,7 +12,7 @@ export default function Login() {
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try{
-const res= await fetch("http://localhost:8000/user/userLogin", {
+const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/userLogin", {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

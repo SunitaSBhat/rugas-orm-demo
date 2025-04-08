@@ -6,7 +6,7 @@ const Nav= () => {
    const navigate = useNavigate();
    const handleNavigate= async()=>{
     try{
-    await axios.get('http://localhost:8000/api/check-auth', { withCredentials: true });
+    await axios.get('https://rugas-orm-demo-xi.vercel.app/api/check-auth', { withCredentials: true });
     navigate("/CustomerOnboardingr");
     }
     catch(error){
@@ -22,7 +22,7 @@ const Nav= () => {
   };
   const handleLogout= async()=>{
     try{
-      const response=await axios.get('http://localhost:8000/user/logout', { withCredentials: true });
+      const response=await axios.get('https://rugas-orm-demo-xi.vercel.app/user/logout', { withCredentials: true });
       alert(response);
       }
       catch(error){

@@ -6,7 +6,7 @@ export default function Home() {
      const navigate = useNavigate();
      const handleNavigate= async()=>{
       try{
-      await axios.get('http://localhost:8000/api/check-auth', {withCredentials: true} );
+      await axios.get('https://rugas-orm-demo-xi.vercel.app/api/check-auth', {withCredentials: true} );
       navigate("orderList");
       }
       catch(error){                  

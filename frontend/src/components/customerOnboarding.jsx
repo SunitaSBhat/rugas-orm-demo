@@ -15,7 +15,7 @@ export default function CustomerOnboarding() {
     const handleSubmit=async(e)=>{
       e.preventDefault();
       try{
-  const res= await fetch("http://localhost:8000/user/createCustomer", {
+  const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/createCustomer", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

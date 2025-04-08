@@ -24,7 +24,7 @@ export default function CustomerAndProduct() {
       const handleSubmit=async(e)=>{
         e.preventDefault();
         try{
-    const res= await fetch("http://localhost:8000/user/order", {
+    const res= await fetch("https://rugas-orm-demo-xi.vercel.app/user/order", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ export default function CustomerAndProduct() {
         
          const [customerData, setCustomer]=useState([]);
          useEffect(() => {
-            fetch("http://localhost:8000/user/getCustomer")
+            fetch("https://rugas-orm-demo-xi.vercel.app/user/getCustomer")
               .then((res) => res.json())
               .then((data) => {
                 setCustomer(data); 

@@ -9,7 +9,7 @@ export default function OrderList() {
   });
 
   useEffect(() => {
-    fetch('http://localhost:8000/user/allOrders')
+    fetch('https://rugas-orm-demo-xi.vercel.app/user/allOrders')
       .then((res) => res.json())
       .then((data) => {
        
